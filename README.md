@@ -1,3 +1,28 @@
+## Scottsdale Hail & Detail
+
+Vercel-ready Next.js App Router site with Tailwind and shadcn/ui.
+
+### Setup
+
+1. Copy `.env.local.example` to `.env.local` and set:
+
+```
+RESEND_API_KEY=...
+CONTACT_TO_EMAIL=info@scottsdalehail.com
+NEXT_PUBLIC_CALENDLY_URL=your_calendly_url
+NEXT_PUBLIC_PHONE=+16237777365
+```
+
+2. Install and run:
+
+```
+npm install
+npm run dev
+```
+
+### Pages
+
+Home, About, Services (+ PDR, Hail Damage Repair, Free MES-lit Inspections), Gallery, Contact.
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
