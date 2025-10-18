@@ -1,8 +1,5 @@
+// Temporarily disabled to debug build error. Re-enable after verifying build.
 export default function robots() {
-  const base = "https://scottsdalehail.com";
-  return {
-    rules: { userAgent: "*", allow: "/" },
-    sitemap: `${base}/sitemap.xml`,
-  };
+  return {} as any;
 }
 
