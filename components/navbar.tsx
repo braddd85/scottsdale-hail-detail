@@ -1,51 +1,54 @@
 "use client";
 import Link from "next/link";
 import { site } from "@/lib/site";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-neutral-950/80 backdrop-blur-xl">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <Link href="/" className="font-bold tracking-tight text-xl">
-          {site.name}
+        <Link href="/" className="flex items-center gap-3">
+          <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-red-600 to-red-500 shadow-lg shadow-red-600/30" />
+          <span className="font-bold tracking-tight text-lg">{site.name}</span>
         </Link>
-        <nav className="hidden md:flex items-center gap-6">
-          {site.nav.map((n) => (
-            <Link key={n.href} href={n.href} className="text-sm hover:text-primary">
-              {n.label}
-            </Link>
-          ))}
+        
+        <nav className="hidden md:flex items-center gap-8">
+          <a href="#services" className="text-sm font-medium text-neutral-300 hover:text-white transition">Services</a>
+          <a href="#process" className="text-sm font-medium text-neutral-300 hover:text-white transition">Process</a>
+          <a href="#gallery" className="text-sm font-medium text-neutral-300 hover:text-white transition">Gallery</a>
+          <a href="#contact" className="text-sm font-medium text-neutral-300 hover:text-white transition">Contact</a>
           <a
-            href={site.calendlyUrl || "/contact#book"}
-            className="inline-flex h-9 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground hover:opacity-90"
+            href="#book"
+            className="inline-flex h-10 items-center rounded-xl bg-gradient-to-r from-red-600 to-red-500 px-5 text-sm font-semibold text-white shadow-lg shadow-red-600/30 hover:shadow-xl hover:shadow-red-600/40 transition-all"
           >
-            Book Scan
+            Book Free Scan
           </a>
         </nav>
+        
         <button
-          aria-label="Open menu"
+          aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
-          className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-md border border-border"
+          className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 hover:bg-white/5"
         >
-          <Menu className="h-5 w-5" />
+          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </div>
+      
       {open && (
-        <div className="md:hidden border-t border-border/60 bg-background">
-          <div className="px-4 py-3 flex flex-col gap-3">
-            {site.nav.map((n) => (
-              <Link key={n.href} href={n.href} className="py-1" onClick={() => setOpen(false)}>
-                {n.label}
-              </Link>
-            ))}
+        <div className="md:hidden border-t border-white/10 bg-neutral-950/95 backdrop-blur-xl">
+          <div className="px-4 py-4 flex flex-col gap-3">
+            <a href="#services" className="py-2 text-neutral-300" onClick={() => setOpen(false)}>Services</a>
+            <a href="#process" className="py-2 text-neutral-300" onClick={() => setOpen(false)}>Process</a>
+            <a href="#gallery" className="py-2 text-neutral-300" onClick={() => setOpen(false)}>Gallery</a>
+            <a href="#contact" className="py-2 text-neutral-300" onClick={() => setOpen(false)}>Contact</a>
             <a
-              href={site.calendlyUrl || "/contact#book"}
-              className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground"
+              href="#book"
+              className="inline-flex h-11 items-center justify-center rounded-xl bg-gradient-to-r from-red-600 to-red-500 text-sm font-semibold text-white"
+              onClick={() => setOpen(false)}
             >
-              Book Scan
+              Book Free Scan
             </a>
           </div>
         </div>

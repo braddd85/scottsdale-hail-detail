@@ -1,27 +1,25 @@
-import Hero from "@/components/hero";
-import ServicesGrid from "@/components/services-grid";
-import WhyChooseUs from "@/components/why-choose-us";
-import GalleryGrid from "@/components/gallery-grid";
-import Testimonials from "@/components/testimonials";
+import Hero from "@/components/hero-premium";
+import ServicesGrid from "@/components/services-premium";
+import WhyChooseUs from "@/components/why-choose-premium";
+import ProcessTimeline from "@/components/process-timeline";
+import GalleryGrid from "@/components/gallery-premium";
+import Testimonials from "@/components/testimonials-premium";
+import Stats from "@/components/stats-bar";
+import CalendlyEmbed from "@/components/calendly-embed";
+import ContactPremium from "@/components/contact-premium";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-neutral-950">
       <Hero />
+      <Stats />
       <ServicesGrid />
+      <ProcessTimeline />
       <WhyChooseUs />
       <GalleryGrid />
       <Testimonials />
-      <section className="py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold">Ready to restore your vehicle?</h2>
-          <p className="mt-2 text-muted-foreground">Book a free MES-lit inspection or contact us for a consultation.</p>
-          <div className="mt-6 flex justify-center gap-3">
-            <a href="/contact#book" className="inline-flex h-11 items-center justify-center rounded-md bg-primary px-6 text-primary-foreground font-medium">Book Free Inspection</a>
-            <a href="/contact" className="inline-flex h-11 items-center justify-center rounded-md border border-border px-6">Contact Us</a>
-          </div>
-        </div>
-      </section>
+      <CalendlyEmbed />
+      <ContactPremium />
     </main>
   );
 }
