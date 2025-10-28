@@ -31,7 +31,7 @@ export async function POST(req: Request) {
       `,
     });
     return Response.json({ success: true });
-  } catch (e) {
+  } catch {
     return new Response("Server error", { status: 500 });
   }
 }

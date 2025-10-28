@@ -5,7 +5,7 @@ export default function PDRPage() {
     <main>
       <section className="border-b border-border/60">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-          <h1 className="text-3xl md:text-4xl font-bold">Restore your car's perfection with PDR</h1>
+          <h1 className="text-3xl md:text-4xl font-bold">Restore your car&apos;s perfection with PDR</h1>
           <p className="mt-3 text-muted-foreground max-w-3xl">PDR removes dents without paint or filler, keeping the factory finish intact and retaining value.</p>
         </div>
       </section>
