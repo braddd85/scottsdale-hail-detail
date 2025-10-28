@@ -16,7 +16,7 @@ export default function HeroPremium() {
         <div className="z-10">
           <div className="inline-flex items-center gap-2 rounded-full border border-red-600/20 bg-red-600/5 px-4 py-1.5 text-sm text-red-400 mb-6">
             <CheckCircle2 className="h-4 w-4" />
-            Scottsdale's Premier Hail Repair Experts
+            Scottsdale&apos;s Premier Hail Repair Experts
           </div>
           
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">

@@ -31,8 +31,8 @@ export default function ContactPremium() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-bold">Get in Touch</h2>
-          <p className="mt-4 text-lg text-neutral-400">
-            Questions? Need an estimate? We're here to help.
+              <p className="mt-4 text-lg text-neutral-400">
+            Questions? Need an estimate? We&apos;re here to help.
           </p>
         </div>
         
@@ -137,7 +137,7 @@ export default function ContactPremium() {
               
               {status === "sent" && (
                 <p className="text-sm text-emerald-400 text-center">
-                  Thanks! We'll be in touch within 24 hours.
+                  Thanks! We&apos;ll be in touch within 24 hours.
                 </p>
               )}
               {status === "error" && (

@@ -13,7 +13,7 @@ export default function Footer() {
               <div className="font-bold text-xl">{site.name}</div>
             </div>
             <p className="text-sm text-neutral-400 max-w-sm">
-              Scottsdale's premier hail repair and detailing team. Factory-finish PDR, insurance claim management, and premium detailing.
+              Scottsdale&apos;s premier hail repair and detailing team. Factory-finish PDR, insurance claim management, and premium detailing.
             </p>
             <div className="flex gap-3 mt-6">
               <a href="#" className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 hover:bg-white/5 transition">

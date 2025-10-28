@@ -4,7 +4,7 @@ const steps = [
   {
     num: "01",
     title: "Book Your Free Scan",
-    desc: "Schedule a no-obligation LED-booth assessment. We'll reveal every dent.",
+    desc: "Schedule a no-obligation LED-booth assessment. We&apos;ll reveal every dent.",
     icon: Phone,
   },
   {
