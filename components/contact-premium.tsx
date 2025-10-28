@@ -89,7 +89,7 @@ export default function ContactPremium() {
             <div id="refer" className="rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-6 backdrop-blur">
               <div className="text-lg font-bold text-emerald-400">Refer & Earn $500</div>
               <p className="mt-2 text-sm text-neutral-300">
-                Know a dealership or body shop? If they partner with us, you'll receive $500. Contact us for details.
+                Know a dealership or body shop? If they partner with us, you&apos;ll receive $500. Contact us for details.
               </p>
             </div>
           </div>
