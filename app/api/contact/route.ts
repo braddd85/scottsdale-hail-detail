@@ -16,9 +16,10 @@ export async function POST(req: Request) {
       return new Response("Invalid input", { status: 400 });
     }
     const resend = new Resend(process.env.RESEND_API_KEY);
+    const from = process.env.RESEND_FROM || "onboarding@resend.dev"; // fallback sender without domain verification
     await resend.emails.send({
       to: process.env.CONTACT_TO_EMAIL || "info@scottsdalehail.com",
-      from: "Scottsdale Hail & Detail <noreply@scottsdalehail.com>",
+      from,
       subject: "New Contact Form Submission",
       html: `
         <h2>New website inquiry</h2>
@@ -34,4 +35,6 @@ export async function POST(req: Request) {
     return new Response("Server error", { status: 500 });
   }
 }
+
+
 
