@@ -23,8 +23,8 @@ const benefits = [
   },
   {
     icon: Users,
-    title: "Dealership Preferred",
-    desc: "Trusted by Scottsdale's top dealers and body shops.",
+    title: "Penske-Recognized",
+    desc: "Official provider to Penske dealerships since 2010.",
   },
   {
     icon: CheckCircle2,

@@ -16,7 +16,7 @@ export default function HeroPremium() {
         <div className="z-10">
           <div className="inline-flex items-center gap-2 rounded-full border border-red-600/20 bg-red-600/5 px-4 py-1.5 text-sm text-red-400 mb-6">
             <CheckCircle2 className="h-4 w-4" />
-            Scottsdale&apos;s Premier Hail Repair Experts
+            Penske-Recognized Since 2010 • 2,500+ Vehicles Restored
           </div>
           
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
@@ -27,7 +27,7 @@ export default function HeroPremium() {
           </h1>
           
           <p className="mt-6 text-xl text-neutral-300 max-w-xl">
-            Precision LED assessments, factory-finish paintless dent repair, and zero-hassle insurance claim management in Scottsdale.
+            Nationwide hail repair with HQ in Scottsdale. Factory-finish PDR, precision LED diagnostics, and seamless insurance coordination since 2010.
           </p>
           
           <div className="mt-10 flex flex-col sm:flex-row gap-4">

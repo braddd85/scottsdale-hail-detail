@@ -1,9 +1,9 @@
 export default function Stats() {
   const stats = [
     { label: "Vehicles Restored", value: "2,500+" },
-    { label: "Years Experience", value: "30+" },
-    { label: "Customer Satisfaction", value: "98%" },
-    { label: "Claims Managed", value: "1,200+" },
+    { label: "Years in Business", value: "15+" },
+    { label: "Penske Certified", value: "Since 2010" },
+    { label: "Coverage Area", value: "Nationwide" },
   ];
   
   return (

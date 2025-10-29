@@ -1,12 +1,12 @@
 import { Phone, Camera, Wrench, FileCheck, Sparkles } from "lucide-react";
 
 const steps = [
-  {
-    num: "01",
-    title: "Book Your Free Scan",
-    desc: "Schedule a no-obligation LED-booth assessment. We&apos;ll reveal every dent.",
-    icon: Phone,
-  },
+    {
+      num: "01",
+      title: "Book Your Free Scan",
+      desc: "Schedule a no-obligation assessment at our Scottsdale HQ or nationwide mobile unit.",
+      icon: Phone,
+    },
   {
     num: "02",
     title: "Precision Assessment",
