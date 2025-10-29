@@ -1,4 +1,4 @@
-import { Wrench, ShieldCheck, FileCheck, Sparkles } from "lucide-react";
+import { Wrench, ShieldCheck, FileCheck, Sparkles, Car } from "lucide-react";
 import Link from "next/link";
 
 const services = [
@@ -9,10 +9,10 @@ const services = [
     href: "/services/hail-damage-repair",
   },
   {
-    title: "Premium Detailing",
-    desc: "Showroom-quality restoration to bring back that new-car gloss and protect finishes.",
-    icon: Sparkles,
-    href: "/services",
+    title: "Mobile Inspections (Scottsdale)",
+    desc: "At-home/office panel checks. LED or manual, weather permitting. We'll start your claim if needed.",
+    icon: Car,
+    href: "/contact",
   },
   {
     title: "Insurance Claims",
@@ -21,9 +21,9 @@ const services = [
     href: "/services",
   },
   {
-    title: "Paint Protection",
-    desc: "Ceramic coatings and PPF to keep your finish flawless for years.",
-    icon: ShieldCheck,
+    title: "Premium Detailing",
+    desc: "Showroom-quality restoration to bring back that new-car gloss and protect finishes.",
+    icon: Sparkles,
     href: "/services",
   },
 ];
