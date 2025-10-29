@@ -27,7 +27,7 @@ export default function HeroPremium() {
           </h1>
           
           <p className="mt-6 text-xl text-neutral-300 max-w-xl">
-            Nationwide hail repair with HQ in Scottsdale. Factory-finish PDR, precision LED diagnostics, and seamless insurance coordination since 2010.
+            Nationwide hail repair with HQ in Scottsdale. LED-booth <strong>or manual</strong> inspections, mobile inspections available locally, factory-finish PDR, and seamless insurance coordination since 2010.
           </p>
           
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
@@ -45,6 +45,10 @@ export default function HeroPremium() {
               Refer & Earn $500
             </Link>
           </div>
+          
+          <p className="mt-4 text-sm text-neutral-400">
+            Prefer an at-home check? We offer <strong className="text-neutral-300">mobile inspections in Scottsdale</strong>.
+          </p>
           
           <div className="mt-12 grid grid-cols-2 gap-4 max-w-lg">
             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-4 backdrop-blur">
