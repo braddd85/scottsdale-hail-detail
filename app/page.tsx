@@ -20,6 +20,6 @@ export default function Home() {
       <Testimonials />
       <CalendlyEmbed />
       <ContactPremium />
-    </main>
+      </main>
   );
 }
