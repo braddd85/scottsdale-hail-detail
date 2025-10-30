@@ -9,7 +9,6 @@ import CalendlyEmbed from "@/components/calendly-embed";
 import ContactPremium from "@/components/contact-premium";
 import NavPremium from "@/components/NavPremium";
 import Section from "@/components/Section";
-import TrustBar from "@/components/TrustBar";
 import FAQPremium from "@/components/FAQPremium";
 import FinalCtaBand from "@/components/FinalCtaBand";
 import SeoSchema from "@/components/SeoSchema";
