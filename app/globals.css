@@ -122,7 +122,7 @@
   }
 }
 
-/* --- Luxury surfaces + utilities --- */
+/* Scottsdale Hail & Detail - Luxury Surface System */
 :root {
   --bg: #0b0c0e;          /* page base */
   --panel: #111214;       /* section panel */
@@ -136,7 +136,7 @@
   background-image:
     radial-gradient(80% 60% at 50% -10%, rgba(244,10,10,0.10) 0%, rgba(244,10,10,0) 60%),
     radial-gradient(60% 50% at 100% 10%, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0) 60%),
-    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.025'/></svg>");
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(#n)' opacity='.025'/></svg>");
   background-blend-mode: screen, normal, normal;
 }
 
@@ -174,4 +174,3 @@ body {
 .subtle {
   @apply text-neutral-300/90;
 }
-/* --- end additions --- */

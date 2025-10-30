@@ -1,3 +1,5 @@
+import { site } from "@/lib/site";
+
 export default function FinalCtaBand() {
   return (
     <div className="section my-16">
@@ -8,8 +10,8 @@ export default function FinalCtaBand() {
             <p className="subtle mt-1">Mobile inspections in Scottsdale • Nationwide hail team</p>
           </div>
           <div className="flex items-center gap-3">
-            <a href="tel:+16237777365" className="rounded-full bg-white/5 px-5 py-3 text-white border border-white/10 hover:bg-white/10">Call (623) 777-7365</a>
-            <a href={process.env.NEXT_PUBLIC_CALENDLY_URL || "#"} className="rounded-full bg-[var(--accent)] px-5 py-3 text-white font-semibold hover:opacity-90">Book Free Scan</a>
+            <a href={site.phoneHref} className="rounded-full bg-white/5 px-5 py-3 text-white border border-white/10 hover:bg-white/10">{site.phone}</a>
+            <a href={site.calendlyUrl || "#book"} className="rounded-full bg-[var(--accent)] px-5 py-3 text-white font-semibold hover:opacity-90">Book Free Scan</a>
           </div>
         </div>
       </div>

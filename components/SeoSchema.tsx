@@ -1,10 +1,12 @@
+import { site } from "@/lib/site";
+
 export default function SeoSchema() {
   const data = {
     "@context": "https://schema.org",
     "@type": "AutoBodyShop",
-    name: "Scottsdale Hail & Detail",
-    telephone: "(623) 777-7365",
-    email: "team@scottsdalehail.com",
+    name: site.name,
+    telephone: site.phone,
+    email: site.email,
     image: "/logo.png",
     address: {
       "@type": "PostalAddress",
