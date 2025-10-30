@@ -21,9 +21,6 @@ export default function Home() {
       <main className="bg-noise" style={{ backgroundColor: "var(--bg)" }}>
         <NavPremium />
         <Hero />
-        <TrustBar />
-        
-        <div className="section-divider" />
         
         <Section>
           <Stats />
