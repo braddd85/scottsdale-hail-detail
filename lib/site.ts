@@ -4,7 +4,7 @@ export const site = {
   phoneHref: "tel:+16237777365",
   email: "team@scottsdalehail.com",
   address: "8350 E Evans Rd Ste E1, Scottsdale, AZ 85260",
-  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || "",
+  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/braddrum85/10",
   founded: "2010",
   vehiclesRestored: "2,500+",
   coverageArea: "Nationwide",
