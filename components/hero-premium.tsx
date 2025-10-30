@@ -1,11 +1,22 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { site } from "@/lib/site";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export default function HeroPremium() {
   return (
     <section className="relative min-h-[90vh] overflow-hidden">
+      {/* Logo */}
+      <Image
+        src="/logo.png"
+        alt="Scottsdale Hail & Detail Logo"
+        width={120}
+        height={120}
+        className="absolute top-6 right-6 z-50 rounded-xl shadow-xl opacity-95 hover:opacity-100 transition-opacity"
+        priority
+      />
+      
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-neutral-950 via-neutral-900 to-neutral-950" />
       

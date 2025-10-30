@@ -1,4 +1,0 @@
-Add your images into /public (e.g., hero.jpg, /gallery/*.jpg). This file exists to ensure the directory is committed.
-
-
-

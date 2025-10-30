@@ -2,7 +2,7 @@ import Hero from "@/components/hero-premium";
 import ServicesGrid from "@/components/services-premium";
 import WhyChooseUs from "@/components/why-choose-premium";
 import ProcessTimeline from "@/components/process-timeline";
-import GalleryGrid from "@/components/gallery-premium";
+import GalleryShowcase from "@/components/gallery-showcase";
 import Testimonials from "@/components/testimonials-premium";
 import Stats from "@/components/stats-bar";
 import CalendlyEmbed from "@/components/calendly-embed";
@@ -16,7 +16,7 @@ export default function Home() {
       <ServicesGrid />
       <ProcessTimeline />
       <WhyChooseUs />
-      <GalleryGrid />
+      <GalleryShowcase />
       <Testimonials />
       <CalendlyEmbed />
       <ContactPremium />
